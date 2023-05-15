@@ -1,7 +1,6 @@
 services:
   container1:
-    build: ./Container1/
-    image: a1_c1
+    image: wrh1997/a1_c1:latest
     ports:
       - 6000:6000
     networks:
@@ -9,8 +8,7 @@ services:
         aliases:
           - c1
   container2:
-    build: ./Container2/
-    image: a1_c2
+    image: wrh1997/a1_c2:latest
     ports:
       - 3000:3000
     networks:
