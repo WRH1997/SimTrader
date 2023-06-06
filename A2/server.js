@@ -271,7 +271,7 @@ async function deleteData(call, callback){
 
 //method to start the server and begin the server chain by posting to professor's /start endpoint
 function main(){
-    let currIp = ip.address() + ":6000";
+    let currIp = "ec2-174-129-140-210.compute-1.amazonaws.com:6000";//ip.address() + ":6000";
     /*CITATION NOTE:
     The following code used to bind services from the proto file to the functions 
     that implement it onto the gRPC server from the following source:
