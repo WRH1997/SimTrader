@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: my-app
+  replicas: 3
+  minReadySeconds: 10
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: my-app
+        env: development
+    spec:
+      containers:
+      - name: my-app1
+        image: gcr.io/b00919848-cloud/github.com/wrh1997/a3t2:latest
+        ports:
+        - containerPort: 6000
+        volumeMounts: 
+        - mountPath: "/waleed_PV_dir/"
+          name: pvc-vol
+      - name: my-app2
+        image: gcr.io/b00919848-cloud/github.com/wrh1997/a3t3:latest
+        ports:
+        - containerPort: 5000
+        volumeMounts: 
+        - mountPath: "/waleed_PV_dir/"
+          name: pvc-vol
+      volumes:
+      - name: pvc-vol
+        persistentVolumeClaim:
+          claimName: pvc-demo
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-service
+spec:
+  type: LoadBalancer
+  ports:
+  - name: port6000
+    port: 6000
+    targetPort: 6000
+    protocol: TCP
+  - name: port5000
+    port: 5000
+    targetPort: 5000
+    protocol: TCP
+  selector:
+    app: my-app
