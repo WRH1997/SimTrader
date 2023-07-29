@@ -1,0 +1,191 @@
+html, body{
+    background: linear-gradient(110deg, #EDE4FF 70%, #D7BBF5 60%);
+    height: 100%;
+}
+
+.logout{
+    width: 100%;
+    border-top: solid #D7BBF5 1px;
+    position:absolute;
+    bottom:0;
+    background-color: #FDEBED
+}
+
+.logout hr{
+    border: solid 1px black;
+}
+
+.logout-btn{
+    font-size: 14pt; 
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.port-view-div > .logout{
+    position: fixed;
+    bottom: 0;
+}
+
+
+.login-div{
+    margin-top: 5vh;
+}
+
+.login-div h4{
+    margin-bottom: 6vh;
+}
+
+.login-div hr{
+    margin-top: 8vh;
+    margin-bottom: -1.5vh;
+    border: grey solid 1px;
+    width: 70%;
+    opacity: 50%;
+}
+
+.login-div h1{
+    color: darkblue;
+    margin-bottom: -1vh;
+}
+
+.login-btn{
+    font-size: 12pt;
+    border-radius: 25px;
+    padding: 7px;
+    margin-top: 2vh;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.lgn-txt{
+    width: 12%;
+}
+
+.hmpg-port{
+    margin-top: 0vh;
+}
+
+.ps-div{
+    width: 14%;
+    border:solid black 2px;
+    margin: 40px;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: lightgrey;
+}
+
+.hmpg-port h2{
+    margin-bottom: 6vh;
+}
+
+.create-btn{
+    font-size: 12pt;
+    border-radius: 25px;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.single-port{
+    margin-bottom: 5vh;
+    border: solid black 1px;
+    border-radius: 25px;
+    padding: 2vh;
+    width: 30%;
+    background-color: lightgrey;
+}
+
+.sell-quant{
+    font-size: 12pt;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.port-balance{
+    font-size: 18pt;
+}
+
+.buy-stock-btn{
+    font-size: 14pt;
+    margin-bottom: 4vh;
+    margin-right: 1vh;
+}
+
+.back-to-all{
+    font-size: 14pt;
+    margin-bottom: 4vh;
+    margin-left: 1vh;
+}
+
+.stock-form{
+    border: solid black;
+    padding: 3vh;
+    border-radius: 25px;
+    background-color: lightgray;
+}
+
+.buy-options{
+    text-decoration: underline;
+    color: blue;
+    margin-top: 1vh;
+    margin-left: 1vh;
+}
+
+.buy-options:hover{
+    cursor: pointer;
+}
+
+.sr-btn{
+    margin-top:1vh;
+    margin-bottom:1vh;
+    font-size: 12pt;
+}
+
+.buy-form-btn{
+    color: darkred;
+    margin-top: 2vh;
+    font-size: 16pt;
+    padding-right: 3vh;
+    padding-left: 3vh;
+    border-radius: 25px;
+}
+
+.create-div{
+    background-color:lightgrey;
+    border: solid black;
+    border-radius: 25px;
+    padding: 3vh;
+}
+
+.create-div input{
+    font-size: 12pt;
+}
+
+.signup-div{
+    margin-top: 5vh;
+}
+
+.dvdr{
+    display:block;
+    height: 1.3vh;
+}
+
+.dvdr2{
+    display:block;
+    height: 1vh;
+}
+
+.signup-input{
+    width: 20%;
+}
+
+.signup-submit{
+    font-size: 12pt;
+    border-radius:25px;
+    padding:1vh;
+    padding-right: 2vh;
+    padding-left: 2vh;
+}
