@@ -18,6 +18,12 @@ def lambda_handler(event, context):
     secretJson = json.loads(secretRes['SecretString'])
     apiKey = secretJson['RealStonks']
     
+    """
+    CITATION NOTE:
+    The following code used to send an API request to the RealStonks API was implemented
+    while referencing the documentation found in the following source:
+    URL: https://rapidapi.com/amansharma2910/api/realstonks
+    """
     import http.client
     conn = http.client.HTTPSConnection("realstonks.p.rapidapi.com")
 
